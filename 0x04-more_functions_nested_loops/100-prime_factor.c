@@ -1,31 +1,30 @@
 #include <stdio.h>
 
 /**
-*main- prints the largest prime factor
-*of a number
-*
-*Return: returns 0
-*/
+ * main - prints the largest prime factor of the number 612852475143
+ *
+ * Return: Always 0
+ */
 
 int main(void)
 {
-    long number = 612852475143;
-    int inc;
+	long int prime = 612852475143;
+	long int quotient = prime;
+	long int divisor = 2;
 
-    while (inc++ < number / 2)
-    {
-        if (number % inc == 0)
-        {
-            number /= 2;
-            continue;
-        }
+	while (quotient != divisor)
+	{
+		if (quotient % divisor == 0)
+		{
+			quotient = quotient / divisor;
+		}
+		else
+		{
+			divisor++;
+		}
+	}
 
-        for (inc = 3; inc < number / 2; inc += 2)
-        {
-            if (number % inc == 0)
-                number /= inc;
-        }
-    }
-    printf("%ld\n", number);
-    return (0);
+	printf("%li\n", quotient);
+
+	return (0);
 }
