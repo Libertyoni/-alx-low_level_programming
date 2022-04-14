@@ -17,13 +17,13 @@ int main(int argc, char *argv[])
 	{
 		printf("Error\n");
 		exit(1);
-							 }
+	}
 	
 	nbytes = atoi(argv[1]);
 
 	if (nbytes < 0)
 	{
-								 printf("Error\n");
+		printf("Error\n");
 		exit(2);
 	}
 
