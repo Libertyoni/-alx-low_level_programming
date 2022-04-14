@@ -33,7 +33,6 @@ int main(int argc, char *argv[])
 		if (i != nbytes - 1)
 			printf(" ");
 	}
-
-	printf("\n");
+        printf("\n");
 	return (0);
 }
